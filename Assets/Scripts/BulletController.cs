@@ -30,7 +30,8 @@ public class BulletController : MonoBehaviour
         if (other.gameObject.tag == "Boss")
         {
             Destroy(gameObject);
-            pc.killBoss(1); 
+            pc.killBoss(1);
+            Debug.Log(pc.GetKillBossCount()); 
         }
     }
 }
