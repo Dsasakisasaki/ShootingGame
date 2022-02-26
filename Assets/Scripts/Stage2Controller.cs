@@ -24,7 +24,7 @@ public class Stage2Controller : MonoBehaviour
 
         }
 
-        if (player.GetBossKillCount() == 1)
+        if (player.GetKillBossCount() == 20)
         {
             Invoke("MoveToClear", 2.0f);
         }

@@ -4,30 +4,40 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    public int killCount;
-    public int bossKillCount;
-    public int life;
-
+    public int killCount=0;
+    public int killBossCount=0;
+    public int life=3;
+    
+   
     public int GetKillCount()
     {
         return killCount;
     }
 
-    public int GetBossKillCount()
+    public int GetKillBossCount()
     {
-        return bossKillCount;
+        return killBossCount;
     }
 
-    /*
-    public void enemyKill(Collision other)
+    
+    public void killEnemy(int n)
     {
-        if(other.OncollisionEnter.tag=="Enemy")
+        killCount += n;
+    }
+
+    public void killBoss(int n)
+    {
+        killBossCount += n;
+    }
+
+    public void OnCollisionEnter(Collision other)
+    {
+        if(other.gameObject.tag=="Enemy" || other.gameObject.tag=="Boss" )
         {
-            player.killCount += 1;
-        
+            life -= 1;
+        }
     }
-    */
-
+    
     public int Life()
     {
         return life;
