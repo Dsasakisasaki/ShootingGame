@@ -43,7 +43,7 @@ public class Stage2Controller : MonoBehaviour
         SceneManager.LoadScene("Clear");
 
         //2秒後にReturnToTitleを呼び出す
-        Invoke("ReturnToTitle", 2.0f);
+        //Invoke("ReturnToTitle", 2.0f);
     }
 
     void ReturnToTitle()
