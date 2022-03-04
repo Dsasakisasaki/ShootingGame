@@ -112,6 +112,26 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 23800000, guid: 5626e7e783b89f7488811294336c259f, type: 2}
+--- !u!1 &24956605 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6709981202934571506, guid: 4b6ed6f7a05aff74e9e7b212a057a66b,
+    type: 3}
+  m_PrefabInstance: {fileID: 6708175183235153947}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &24956606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 24956605}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a740879f8c397e4887b20fc18ef58d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mace: {fileID: 8829866815941336380, guid: 7dac1285bf49cd5489403bc0ef252bbc, type: 3}
+  maceSpeed: 20
 --- !u!1 &26681794
 GameObject:
   m_ObjectHideFlags: 0
@@ -1265,6 +1285,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Robot Kyle
+      objectReference: {fileID: 0}
+    - target: {fileID: 3125226927099912407, guid: 350a12c30f79d8d4d834715a733a5090,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 3125226927099946986, guid: 350a12c30f79d8d4d834715a733a5090,
+        type: 3}
+      propertyPath: rotSpeed
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 3125226927099946987, guid: 350a12c30f79d8d4d834715a733a5090,
         type: 3}
