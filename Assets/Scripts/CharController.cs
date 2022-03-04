@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -47,8 +48,6 @@ public class CharController : MonoBehaviour
 		//下方向の重力成分
 		dir.y -= gravity * Time.deltaTime;
 
-
-
 		//CharacterControllerはMoveでキャラを移動させる。
 		cc.Move((transform.forward * acc * speed + dir) * Time.deltaTime);
 		
@@ -57,7 +56,6 @@ public class CharController : MonoBehaviour
 		{
 			dir.y = 0;
 		}
-
 
 	}
 }
