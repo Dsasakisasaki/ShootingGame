@@ -20,7 +20,7 @@ public class TCameraController : MonoBehaviour
 
 	void LateUpdate()
 	{
-		mainCamera.transform.position = player.position + (-player.forward * 3.0f) + (player.up * 1.0f);
+		mainCamera.transform.position = player.position + (-player.forward * 5.0f) + (player.up * 3.0f);
 		mainCamera.transform.LookAt(player.position + Vector3.up);
 
         if (Input.GetMouseButtonDown(1))
