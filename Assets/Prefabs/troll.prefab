@@ -3313,7 +3313,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
-  traceDist: 12
+  traceDist: 30
 --- !u!1 &6709991966338956610
 GameObject:
   m_ObjectHideFlags: 0
