@@ -19,8 +19,8 @@ public class Stage1Controller : MonoBehaviour
             //これ以降のUpdateは止める
             enabled = false;
 
-            //2秒後にReturnToStage1を呼び出す
-            Invoke("ReturnToStage1", 2.0f);
+            //2秒後にReturnToRestartを呼び出す
+            Invoke("ReturnToRestart", 2.0f);
          
         }
 
@@ -31,10 +31,10 @@ public class Stage1Controller : MonoBehaviour
 
     }
 
-    void ReturnToStage1()
+    void ReturnToRestart()
     {
-        //タイトルシーンに切り替え
-        SceneManager.LoadScene("Stage1");
+        //Restartに切り替え
+        SceneManager.LoadScene("Restart");
     }
 
     void MoveToStage2()
