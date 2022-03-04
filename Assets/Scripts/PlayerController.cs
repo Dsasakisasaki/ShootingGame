@@ -49,8 +49,7 @@ public class PlayerController : MonoBehaviour
         //Debug.Log("ok");
         if (other.gameObject.tag == "Enemy" || other.gameObject.tag == "Mace")
         {
-            //Debug.Break();
-            Debug.Log("life" + life);
+            //Debug.Log("life" + life);
             life -= 1;
             lp.UpdateLife(life);
             recoverTime = StunDuration;
