@@ -56,10 +56,12 @@ public class PlayerController : MonoBehaviour
         //Debug.Log("ok");
         if (other.gameObject.tag == "Enemy" || other.gameObject.tag == "Mace")
         {
+
             //Debug.Log("life" + life);
             life -= 1;
             lp.UpdateLife(life);
             recoverTime = StunDuration;
+
 
             //Debug.Log("damage");
             animator.SetTrigger("Damage");

@@ -9,7 +9,7 @@ public class RestartController : MonoBehaviour
     void Start()
     {
         //1.5秒後にReturnToStage1を呼び出す
-        Invoke("ReturnToStage1", 1.5f);
+        Invoke("ReturnToStage1", 0.8f);
     }
     void ReturnToStage1()
     {

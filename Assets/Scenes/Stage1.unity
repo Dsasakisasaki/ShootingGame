@@ -2458,12 +2458,22 @@ PrefabInstance:
     - target: {fileID: 6973144017508975668, guid: 871982b567931234595282a50c2dee6e,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 106.700195
+      value: 216.9
       objectReference: {fileID: 0}
     - target: {fileID: 6973144017508975668, guid: 871982b567931234595282a50c2dee6e,
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -43.299988
+      objectReference: {fileID: 0}
+    - target: {fileID: 6973144017508975668, guid: 871982b567931234595282a50c2dee6e,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 385.72595
+      objectReference: {fileID: 0}
+    - target: {fileID: 6973144017508975669, guid: 871982b567931234595282a50c2dee6e,
+        type: 3}
+      propertyPath: m_Text
+      value: "mission:\u30BE\u30F3\u30D3\u3092\u5012\u305B"
       objectReference: {fileID: 0}
     - target: {fileID: 6973144017607708336, guid: 871982b567931234595282a50c2dee6e,
         type: 3}

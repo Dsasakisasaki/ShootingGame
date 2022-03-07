@@ -23,9 +23,9 @@ public class BossShot : MonoBehaviour
     {
         while (true)
         {
-            GameObject wave = Instantiate(mace, (transform.position + new Vector3(-0.5f,2.5f,-2.5f)), Quaternion.Euler(180,0,0));
+            GameObject wave = Instantiate(mace, (transform.position + new Vector3(-0.5f,1.5f,-2.5f)), Quaternion.Euler(180,0,90));
             wave.GetComponent<Rigidbody>().velocity = transform.forward.normalized * maceSpeed;
-            yield return new WaitForSeconds(2.0f);
+            yield return new WaitForSeconds(3.0f);
         }
     }
 }

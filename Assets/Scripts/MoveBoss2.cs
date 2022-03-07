@@ -14,7 +14,7 @@ public class MoveBoss2 : MonoBehaviour
     public float traceDist = 12.0f;
     NavMeshAgent nav;
 
-    private bool arrived;
+    //private bool arrived;
     void Start()
     {
         nav = GetComponent<NavMeshAgent>();
@@ -23,7 +23,7 @@ public class MoveBoss2 : MonoBehaviour
 
         animator = GetComponent<Animator>();
 
-        arrived = false;
+        //arrived = false;
     }
 
     IEnumerator CheckDist()

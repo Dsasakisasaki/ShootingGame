@@ -616,8 +616,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 106.700195, y: -43.299988}
-  m_SizeDelta: {x: 165.3316, y: 48.660957}
+  m_AnchoredPosition: {x: 237.02, y: -43.299988}
+  m_SizeDelta: {x: 425.9681, y: 48.660957}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &200387395
 MonoBehaviour:
@@ -650,7 +650,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Stage:2
+  m_Text: "mission:\u30C8\u30ED\u30FC\u30EB\u3092\u5012\u305B"
 --- !u!222 &200387396
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1299,7 +1299,7 @@ PrefabInstance:
     - target: {fileID: 3125226927099946987, guid: 350a12c30f79d8d4d834715a733a5090,
         type: 3}
       propertyPath: m_Radius
-      value: 0.25
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 3125226927099946987, guid: 350a12c30f79d8d4d834715a733a5090,
         type: 3}

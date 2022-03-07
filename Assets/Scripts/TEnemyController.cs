@@ -9,14 +9,14 @@ public class TEnemyController : MonoBehaviour
     public Transform player;
     public float traceDist = 10.0f;
     NavMeshAgent nav;
-    private bool arrived;
+    //private bool arrived;
 
     void Start()
     {
         animator = GetComponent<Animator>();
         nav = GetComponent<NavMeshAgent>();
         StartCoroutine(CheckDist());
-        arrived = false;
+        //arrived = false;
     }
 
     IEnumerator CheckDist()

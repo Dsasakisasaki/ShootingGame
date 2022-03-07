@@ -20,13 +20,13 @@ public class Stage1Controller : MonoBehaviour
             enabled = false;
 
             //2秒後にReturnToRestartを呼び出す
-            Invoke("ReturnToRestart", 2.0f);
+            Invoke("ReturnToRestart", 0.8f);
          
         }
 
         if (player.GetKillCount() == 20)
         {
-            Invoke("MoveToStage2", 2.0f);
+            Invoke("MoveToStage3", 0.8f);
         }
 
     }
@@ -37,9 +37,9 @@ public class Stage1Controller : MonoBehaviour
         SceneManager.LoadScene("Restart");
     }
 
-    void MoveToStage2()
+    void MoveToStage3()
     {
-        //stage2に切り替え
-        SceneManager.LoadScene("Stage2");
+        //stage3に切り替え
+        SceneManager.LoadScene("Stage3");
     }
 }

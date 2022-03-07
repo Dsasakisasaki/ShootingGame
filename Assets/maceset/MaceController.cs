@@ -12,10 +12,13 @@ public class MaceController : MonoBehaviour
 
     private void OnCollisionEnter(Collision other)
     {
-        if (other.gameObject.tag == "Player" || other.gameObject.tag == "Wall")
+        if (
+            other.gameObject.tag == "Player" ||
+            other.gameObject.tag == "Wall")
         {
             Destroy(gameObject);
         }
     }
+    
 
 }
