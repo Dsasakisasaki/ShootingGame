@@ -48,7 +48,33 @@ public class PlayerController : MonoBehaviour
         return recoverTime > 0.0f || life <= 0;
     }
 
-    private void OnControllerColliderHit(ControllerColliderHit other)
+
+   
+
+    private void OnCollisionEnter(Collision other)
+    {
+        if (IsStun())
+        {
+            return;
+        }
+        //Debug.Log("ok");
+        if (other.gameObject.tag == "Enemy" || other.gameObject.tag == "Mace")
+        {
+
+            //Debug.Log("life" + life);
+            life -= 1;
+            lp.UpdateLife(life);
+            recoverTime = StunDuration;
+
+
+            //Debug.Log("damage");
+            animator.SetTrigger("Damage");
+        }
+
+        //Debug.Log("Idle");
+        animator.SetTrigger("Idle");
+    }
+    /*private void OnControllerColliderHit(ControllerColliderHit other)
     {
         if (IsStun()) {
             return;
@@ -70,7 +96,7 @@ public class PlayerController : MonoBehaviour
         //Debug.Log("Idle");
         animator.SetTrigger("Idle");//
     }
-
+    */
     public int Life()
     {
         return life;

@@ -49,9 +49,13 @@ public class TEnemyController : MonoBehaviour
         }
     }
 
+    
+
     void OnCollisionEnter(Collision collision)
     {
-        if(collision.gameObject.tag == "Bullet")
+       
+
+        if (collision.gameObject.tag == "Bullet")
         {
             //Debug.Log("Hit");
             nav.speed = 0f; //当たったら動きを止める;
