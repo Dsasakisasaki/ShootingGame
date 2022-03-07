@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 79bd70de955d0e84f8c2fc1ae5e4a7b9
+=======
+guid: 0de4b24eaafb5d24cb30abff80f0e79c
+>>>>>>> umezakipr/ume
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
