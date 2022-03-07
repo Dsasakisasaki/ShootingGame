@@ -3,7 +3,13 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Bullet
+  - Enemy
+  - Floor
+  - Boss
+  - Mace
+  - Wall
   layers:
   - Default
   - TransparentFX
@@ -38,6 +44,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Background
+    uniqueID: 1317739459
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
